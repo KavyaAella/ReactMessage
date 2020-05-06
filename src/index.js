@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Message from './components/message'
+//import App from './App';
+//import Message from './components/message'
+import Input from './focusComponents/Input'
+
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Message />
+    <Input />
   </React.StrictMode>,
   document.getElementById('root')
 );
