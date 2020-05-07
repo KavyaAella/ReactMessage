@@ -11,7 +11,7 @@ const TextInput = React.forwardRef((props, ref) => {
     return <Input {...props} forwardedRef={ref} />;
  });
 
-class FocusableInput extends React.Component {
+class FocusableInput extends Component {
 
     ref = React.createRef();
     

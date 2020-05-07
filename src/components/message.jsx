@@ -9,7 +9,7 @@ class Message extends Component {
     
    clickHandler = e =>
     {
-        e.preventDefault();
+       // e.preventDefault();
         this.setState({
           visible: !this.state.visible
         });

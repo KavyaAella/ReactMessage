@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="no opener no referrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import TodoList from './Todos/TodoList'
+class App extends React.Component {
+  state = {  }
+  render() { 
+    return ( 
+   <TodoList items={this.items}
+    onItemClick={(item, event) => { console.log(item, event) }}
+  />);
+  }
 }
-
+ 
 export default App;
+
+
+
+
