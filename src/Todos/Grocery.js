@@ -1,5 +1,5 @@
 import React from 'react';
-const Product = props => {
+var Product = props => {
    
     const plus = () => {
       // Call props.onVote to increase the vote count for this product
@@ -48,6 +48,10 @@ class GroceryApp extends React.Component {
      );
    }
  }
- 
+  Product=[
+    { name: "Oranges", votes: 0 },
+    { name: "Apples", votes: 0 },
+    { name: "Bananas", votes: 0 }
+  ];
 
    export default GroceryApp

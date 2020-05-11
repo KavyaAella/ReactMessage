@@ -2,25 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 //import App from './App';
-import GroceryApp from './Todos/Grocery'
-
+//import GroceryApp from './Todos/Grocery'
+//import App1 from './UserName/App1';
+import ImageGallery from './UserName/ImageGalary'
 //import TodoList from './Todos/TodoList'
 import * as serviceWorker from './serviceWorker';
 //import App from './App';
-
-//  ReactDOM.render(
-//   <React.StrictMode>     <GroceryApp />
-//  </React.StrictMode>,
-//   document.getElementById('root'));
+const links = ["https://goo.gl/kjzfbE", "https://goo.gl/d2JncW"]; 
 
 
-ReactDOM.render(<GroceryApp
-  const Product={[
-    { name: "Oranges", votes: 0 },
-    { name: "Apples", votes: 0 },
-    { name: "Bananas", votes: 0 }
-  ]}
-/>, document.getElementById('root'))
+  ReactDOM.render(
+  <React.StrictMode>     <ImageGallery links ={links} />
+ </React.StrictMode>,
+  document.getElementById('root'));
+
+
+//ReactDOM.render(<GroceryApp /> , document.getElementById('root'))
 
 // document.body.innerHTML = <div id={root}></div>;
 // const rootElement = document.getElementById('root');
